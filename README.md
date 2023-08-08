@@ -19,7 +19,11 @@ The chosen theme for this candy business webpage is "Sweet Delights". The theme 
 
 ## Usage
 
-To view the candy business webpage locally, simply open the index.html file in a web browser. The webpage can also be deployed to a web server for online access, allowing customers to explore and enjoy our candies from anywhere.
+To view the candy business webpage locally, simply open the index.php file in a web browser. The webpage can also be deployed to a web server for online access, allowing customers to explore and enjoy our candies from anywhere.
+
+## Database integration part
+
+Include Database Configuration in GitHub Repository: Add database configuration details (with an sql dump of my database) with any credentials needed, to my GitHub repository.
 
 ## Credits
 
