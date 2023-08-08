@@ -2,6 +2,7 @@
     display: none;
   }
  * {
+  scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -317,6 +318,7 @@ img {
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #f7f7f7;
+
   
 
 }
@@ -325,7 +327,9 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
-
+#order input{
+  margin-bottom: 0;
+}
 input[type="number"] {
   padding: 5px;
   border: 1px solid #ccc;
@@ -349,7 +353,12 @@ input[type="number"] {
 #order form button[type="submit"]:hover {
   background-color: #e6005c;
 }
-
+.error {
+  color: #f60707;
+  font-size: small;
+  margin-top: 0px;
+  font-weight: bold;
+}
 
 #about {
   background-color: #f7f7f7;
@@ -469,11 +478,12 @@ color: #777;
 #contact-form button[type="submit"] {
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 680px;
 }
 
 #contact-form button[type="submit"]:hover {
@@ -481,32 +491,20 @@ color: #777;
 }
 
 #location-map {
-  position: relative;
-  width: 400px;
-  height: 300px;
-  background-image: url('path/to/your/image.jpg');
-  background-size: cover;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-#location-map {
-  background-image: url("path/to/your/image.jpg");
-  background-size: cover;
-  background-position: center;
   width: 100%;
-  height: 400px;
+  margin: 0;
 }
 
 #location-map a {
   display: block;
+  
   text-align: center;
   font-size: 24px;
   color: white;
   text-decoration: none;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
-  margin-top: 100px;
+  margin-top: 15px;
 }
 
 #location-map a:hover {
@@ -517,9 +515,16 @@ color: #777;
 
 
 #sidebar {
-  width: 250px;
-  background-color: #f2f2f2;
-  padding: 10px;
+  width: 50px;
+  background-color: rgb(198, 244, 230);
+  padding: 1px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+  z-index: 1;
 }
 
 #sidebar h3 {
@@ -543,6 +548,10 @@ color: #777;
 
 #sidebar a:hover {
   color: #ff4081;
+}
+#sidebar ul li a img{
+    width: 26px;
+    height: 26px;
 }
 
 
